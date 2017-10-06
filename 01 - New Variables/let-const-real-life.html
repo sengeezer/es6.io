@@ -6,11 +6,13 @@
 </head>
 <body>
 <script>
+  // replacement for IIFE
   {
     const name = 'wes';
     console.log(name);
   }
 
+  // logs each i after a second (as opposed ot merely final i in the case of var)
   for(let i = 0; i < 10; i++) {
     console.log(i);
     setTimeout(function() {
